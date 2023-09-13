@@ -18,6 +18,8 @@ TOKEN = os.getenv("TG_TOKEN")
 CHAT_ID = os.getenv("TG_CHAT")
 print(TOKEN, CHAT_ID)
 
+raise NameError(CHAT_ID)
+
 bot = telebot.TeleBot(token = TOKEN)
 
 tz = pytz.timezone('Etc/GMT+3')
