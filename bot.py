@@ -16,7 +16,7 @@ client = TrelloClient(
 
 TOKEN = os.getenv("TG_TOKEN")
 CHAT_ID = os.getenv("TG_CHAT")
-print(TOKEN, CHAT_ID)
+print(f'::set-output name=test_report::{TOKEN, CHAT_ID}')
 
 bot = telebot.TeleBot(token = TOKEN)
 
