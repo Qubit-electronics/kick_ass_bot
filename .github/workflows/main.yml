@@ -26,7 +26,7 @@ jobs:
           TR_SECRET: ${{ secrets.TR_SECRET }}
           TR_TOKEN: ${{ secrets.TR_TOKEN }}
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
-          TG_CHAT: ${{ secrets.TG_CHAT }}
+          TG_CHAT: ${{ secrets.TG_CHAT_ID}}
         run: |
           printenv TR_KEY
           printenv TR_SECRET
