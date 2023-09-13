@@ -9,13 +9,14 @@ from expired_task import expired_task
 from trello import TrelloClient
 
 client = TrelloClient(
-    api_key= os.environ["TR_KEY"],
-    api_secret=os.environ["TR_SECRET"], 
-    token = os.environ["TR_TOKEN"] 
+    api_key= os.getenv("TR_KEY"),
+    api_secret=os.getenv("TR_SECRET"), 
+    token = os.getenv("TR_TOKEN") 
 )
 
-TOKEN = os.environ["TG_TOKEN"]
-CHAT_ID = os.environ["TG_CHAT"]
+TOKEN = os.getenv("TG_TOKEN")
+CHAT_ID = os.getenv("TG_CHAT")
+print(TOKEN, CHAT_ID)
 
 bot = telebot.TeleBot(token = TOKEN)
 
@@ -96,6 +97,3 @@ if __name__ == "__main__":
              datetime.datetime.now().time().minute==0) :
             main()
             time.sleep(100)
-           
-
-
