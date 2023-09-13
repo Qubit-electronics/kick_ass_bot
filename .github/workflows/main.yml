@@ -28,9 +28,4 @@ jobs:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT_ID}}
         run: |
-          printenv TR_KEY
-          printenv TR_SECRET
-          printenv TR_TOKEN
-          printenv TG_TOKEN
-          printenv TG_CHAT
           python bot.py
