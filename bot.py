@@ -90,7 +90,7 @@ def main():
     else: send_kick(tasks) 
 
 if __name__ == "__main__": 
-    send_wake_up_neo()
+    #send_wake_up_neo()
     while(1):
         if (((datetime.datetime.now().time().hour==8) or 
              (datetime.datetime.now().time().hour==16))  and
