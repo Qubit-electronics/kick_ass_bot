@@ -91,9 +91,9 @@ def main():
 
 if __name__ == "__main__": 
     #send_wake_up_neo()
-    while(1):
+#    while(1):
 #        if (((datetime.datetime.now().time().hour==8) or 
 #             (datetime.datetime.now().time().hour==16))  and
 #             datetime.datetime.now().time().minute==0) :
-            main()
+    main()
 #            time.sleep(100)
