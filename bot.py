@@ -86,14 +86,14 @@ def get_expired_tasks(board)->list:
 
 def main():
     tasks = get_incopleted_tasks()
-    if len(tasks) == 0: send_normal()
+    if len(tasks) == 0: pass #send_normal()
     else: send_kick(tasks) 
 
 if __name__ == "__main__": 
     #send_wake_up_neo()
     while(1):
-        if (((datetime.datetime.now().time().hour==8) or 
-             (datetime.datetime.now().time().hour==16))  and
-             datetime.datetime.now().time().minute==0) :
+#        if (((datetime.datetime.now().time().hour==8) or 
+#             (datetime.datetime.now().time().hour==16))  and
+#             datetime.datetime.now().time().minute==0) :
             main()
-            time.sleep(100)
+#            time.sleep(100)
